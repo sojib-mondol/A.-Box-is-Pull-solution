@@ -1,0 +1,26 @@
+//Bismillah
+//Problem A. Box is Pull
+
+#include<iostream>
+#include<cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int t, x1, y1, x2, y2, a, b, ans;
+    cin >> t;
+    while(t--)
+    {
+        cin>>x1>>y1>>x2>>y2;
+        a = abs(x1-x2);
+        b = abs(y1 - y2);
+        ans = a + b;
+        if(x1 != x2 && y1 != y2) ans += 2;
+        cout<<ans<<endl;
+
+    }
+
+    return 0;
+
+}
